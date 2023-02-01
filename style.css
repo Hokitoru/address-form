@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+.container{
+    margin: 20px auto;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin: 10px 0;
+    width: 260px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid cornflowerblue;
+    outline: none;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+input:nth-child(2), input:nth-child(3), input:nth-child(4) {
+    border: 2px solid grey;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+button{
+    margin: 20px 0;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid cornflowerblue;
+    background-color: powderblue;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+button:hover{
+    border: 2px solid powderblue;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+
+.city-results{
+    position: absolute;
+    top: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.city-results > p{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.city-results > p:hover{
+    background-color: cornflowerblue;
+    transition: 0.5s;
+}
+
+.cities-container{
+    position: relative;
+}
+
+p{
+    margin: 0;
+}
+
+.failure-check{
+    color: red;
+}
+
+.successful-check{
+    color: lawngreen;
+}

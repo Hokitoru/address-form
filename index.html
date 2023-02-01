@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+    <title>adress-form</title>
+</head>
+<body>
+<div class="container">
+    <input class="email" type="email" placeholder="Email">
+    <input readonly="readonly" class="country" type="text" placeholder="Страна">
+    <input readonly="readonly" class="federal" type="text" placeholder="Федеральный округ">
+    <input readonly="readonly" class="region" type="text" placeholder="Область">
+    <div class="cities-container">
+        <input class="input-city" type="text" placeholder="Город">
+        <div class="city-results"></div>
+    </div>
+    <button class="check-btn">Проверить</button>
+    <div class="check-email"></div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
